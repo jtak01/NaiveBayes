@@ -1,0 +1,50 @@
+Observation: 1
+Probability representation that it is a bird: 2.250540515022333
+Probability representation that it is an airplane: -3.2478630723913864
+Given the data and probability distribution function, it is probably a bird
+
+Observation: 2
+Probability representation that it is a bird: -1.2875330066830717
+Probability representation that it is an airplane: 0.753401993893128
+Given the data and probability distribution function, it is probably an aircraft
+
+Observation: 3
+Probability representation that it is a bird: 0.7906523437613924
+Probability representation that it is an airplane: -1.3507444791406522
+Given the data and probability distribution function, it is probably a bird
+
+Observation: 4
+Probability representation that it is a bird: -0.16873234273009086
+Probability representation that it is an airplane: -1.0237169164983326
+Given the data and probability distribution function, it is probably a bird
+
+Observation: 5
+Probability representation that it is a bird: 0.4208037185466509
+Probability representation that it is an airplane: -0.5245072273274838
+Given the data and probability distribution function, it is probably a bird
+
+Observation: 6
+Probability representation that it is a bird: -2.197512466203672
+Probability representation that it is an airplane: 0.8985108279691154
+Given the data and probability distribution function, it is probably an aircraft
+
+Observation: 7
+Probability representation that it is a bird: -1.5312724640399011
+Probability representation that it is an airplane: 5.637063982270033
+Given the data and probability distribution function, it is probably an aircraft
+
+Observation: 8
+Probability representation that it is a bird: 0.8541606274409368
+Probability representation that it is an airplane: 1.3114908750171566
+Given the data and probability distribution function, it is probably an aircraft
+
+Observation: 9
+Probability representation that it is a bird: -2.5404817154290065
+Probability representation that it is an airplane: 1.3615842332880366
+Given the data and probability distribution function, it is probably an aircraft
+
+Observation: 10
+Probability representation that it is a bird: 0.21547284853230586
+Probability representation that it is an airplane: -1.457986109380378
+Given the data and probability distribution function, it is probably a bird
+
