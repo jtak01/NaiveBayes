@@ -1,0 +1,44 @@
+Naive Bayes Classifier
+Jun Sung Tak
+Dec 1st 2020
+
+RUN WITH: python n.py
+
+log-sum-exp trick was used because each probabilities were small and this
+would cause my program to underflow (reported 0 probability). 
+As a result the values reported are not probabilities themselves but
+representation of the product of many small probabilities. 
+
+The classifier was classifying everything correctly except for observation 4
+and 5. The cause of this was that the data set was very noisy and it happened
+to be around the velocity of airplanes. Then looking at the data set it was
+apparent that a birds' observation had more variation in its data set than the
+airplanes'. This makes intuitive sense since the size of a bird is much
+smaller compared to an airplane. Furthermore, an aircraft will change its
+velocity at a smaller rate than a bird's because such a large machinery cannot
+undergo such high changes of acceleration in a small time frame. 
+
+This was accounted for by offsetting the result of the probability
+calculation. 4/10 observations' standard deviations are over 4. Therefore when
+calculating the probability of the observation belonging to the bird class,
+the classifier will determine to add or subtract 1 to the calculation.
+
+For bird:
+	if standard deviation > 4 then add 1 (Since bird observations are more
+		likely to have a higher standard deviation)
+	if standard deviation < 4 then subtract 1 (Since it is not likely that
+		bird observations have a low standard deviation)
+For airplane: 
+	if standard deviation > 4 then subtract 1 (Since airplane observations
+		are less likely to have a higher standard deviation)
+	if standard deviation < 4 then add 1 (Since it is more likely that
+		airplane observations have a lower standard deviation)
+
+By adding or subtracting 1 I was able to have a sort of tie breaker when the
+classification was a little ambiguous. By accounting for the standard
+deviation observation 4 and 5 are correctly classified. 
+One concern was for a data set like observation 10. It is a bird but it has a
+very low standard deviation. However this observation was correctly
+classified. Thus, by adding the small standard deviation mechanism, it served
+as a tie breaker for ambiguous cases yet not being overly influencial in
+the classification. As a result observation 10 was still classifed as a bird. 
